@@ -2,15 +2,15 @@
 
 # 🛡️ PoE Team (ESC Sync)
 
-Effortlessly synchronize the **Escape (ESC) key** across your Path of Exile party!  
-If any teammate presses ESC, everyone with Path of Exile open instantly gets the same input—no matter where they are in the world.
+Effortlessly synchronize the **Escape (ESC) key** across your Path of Exile 2 party!  
+If any teammate presses ESC, everyone with Path of Exile 2 open instantly gets the same input—no matter where they are in the world.
 
 ---
 
 ## ✨ Features
 
-- **Instant ESC Sync:** Press ESC on one PC, and all Path of Exile clients in your party receive it.
-- **Automatic Game Detection:** Only triggers if Path of Exile is running.
+- **Instant ESC Sync:** Press ESC on one PC, and all Path of Exile 2 clients in your party receive it.
+- **Automatic Game Detection:** Only triggers if Path of Exile 2 is running.
 - **Ultra Lightweight:** No bloat, no lag, and no extra dependencies.
 - **Zero Setup for Teammates:** Just run the EXE, enter your host’s IP, and play.
 - **Works Over the Internet:** Not limited to LAN parties!
@@ -26,7 +26,7 @@ If any teammate presses ESC, everyone with Path of Exile open instantly gets the
 
 ### 2. Host Setup
 
-1. The party leader runs **PoE-ESC-Host.exe**.
+1. The party leader runs **host.exe**.
 2. Share your **public IP address** with your friends.
    - Find it easily at [whatismyip.com](https://www.whatismyip.com/) or by searching “my IP” on Google.
 3. **(Required)** Forward UDP port `51987` on your router to your PC.  
@@ -35,7 +35,7 @@ If any teammate presses ESC, everyone with Path of Exile open instantly gets the
 
 ### 3. Client Setup
 
-1. Each teammate runs **PoE-ESC-Client.exe**.
+1. Each teammate runs **client.exe**.
 2. When prompted, enter the host’s public IP address.
 
 ---
@@ -45,14 +45,14 @@ If any teammate presses ESC, everyone with Path of Exile open instantly gets the
 - The host acts as a relay server.
 - When anyone presses ESC, the script checks if Path of Exile is running.
 - If so, it sends an ESC signal to all connected teammates with the game open.
-- Only Path of Exile windows are affected—no accidental ESCs elsewhere!
+- Only Path of Exile 2 windows are affected—no accidental ESCs elsewhere!
 
 ---
 
 ## 📝 Requirements
 
 - **Windows 10/11** (64-bit)
-- **Path of Exile** (English window title)
+- **Path of Exile 2** (English window title)
 - **Internet connection**
 - **UDP port 51987** open (host only)
 
@@ -70,8 +70,8 @@ pip install pyinstaller
 3. Build the executables:
 ```
 
-pyinstaller --onefile --noconsole sync_esc_host.py
-pyinstaller --onefile --noconsole sync_esc_client.py
+pyinstaller --onefile --noconsole host.py
+pyinstaller --onefile --noconsole client.py
 
 ```
 Find your `.exe` files in the `dist/` folder.
@@ -92,14 +92,14 @@ A: The script opens a single UDP port and simulates a keypress. You may need to 
 **Q: It’s not working!**  
 A:  
 - Make sure the host’s port is forwarded and not blocked by a firewall.
-- All users must have Path of Exile open (English title).
+- All users must have Path of Exile 2 open (English title).
 - Double-check the IP address you entered.
 
 ---
 
 ## 💡 Credits
 
-Created by [Your Team Name]  
+Created by [The Backus Agency](backus.agency)  
 Inspired by the need for seamless party coordination in Path of Exile.
 
 ---
