@@ -99,7 +99,7 @@ A:
 
 ## 💡 Credits
 
-Created by [The Backus Agency](backus.agency)  
+Created by [The Backus Agency](https://backus.agency)  
 Inspired by the need for seamless party coordination in Path of Exile.
 
 ---
